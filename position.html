@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #container{
+            width: 800px;
+            height: 500px;
+            margin: 0 auto;
+            border: 2px solid black;
+            position: relative;
+            background-image: url(images/ocean.jpg);
+            background-size: 100%;
+            overflow: hidden;
+        }
+
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 200px;
+            top: 150px;
+            z-index: 0;
+            animation-name: moveBox1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moveBox1 {
+            from {
+                left:0px;
+                background-color: yellow;
+                border-radius: 50%;
+                width: 1px;
+                height: 1px;
+                opacity: 0;
+            }
+            to {
+                left:200px;
+            }
+        }
+        
+        #box2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            left: 500px;
+            top: 250px;
+            z-index: 3;
+            animation-name: moveBox2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes moveBox2 {
+            0% {
+                top:500px;
+                left:300px;
+            }
+            90% {
+                top:100px;
+            }
+            100% {
+                top:250px;
+            }
+        }
+
+        #box3{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 550px;
+            top: 200px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+    </div>
+</body>
+</html>

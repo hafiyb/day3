@@ -2,8 +2,172 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto; padding: 0;
+        }
+        #container{
+            width: 800px;
+            height: 1035px;
+            background-image: url(images/bg-1.png);
+            position: relative;
+            overflow: hidden;
+            font-family: sans-serif;
+            }
+
+            .hexagon3 {
+            position: absolute;
+            width: 500px; 
+            height: 288.68px;
+            background-color: #fdea21;
+            margin: 144.34px 0;
+            }
+
+            .hexagon3:before,
+            .hexagon3:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 250px solid transparent;
+            border-right: 250px solid transparent;
+            }
+
+            .hexagon3:before {
+            bottom: 100%;
+            border-bottom: 144.34px solid #fdea21;
+            }
+
+            .hexagon3:after {
+            top: 100%;
+            width: 0;
+            border-top: 144.34px solid #fdea21;
+            }
+
+            .hexagon2 {
+            position: absolute;
+            width: 350px; 
+            height: 202.07px;
+            background-color: #f1f1f1;
+            margin: 101.04px 0;
+            }
+
+            .hexagon2:before,
+            .hexagon2:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 175px solid transparent;
+            border-right: 175px solid transparent;
+            }
+
+            .hexagon2:before {
+            bottom: 100%;
+            border-bottom: 101.04px solid #f1f1f1;
+            }
+
+            .hexagon2:after {
+            top: 100%;
+            width: 0;
+            border-top: 101.04px solid #f1f1f1;
+            }
+
+            .hexagon {
+            position: absolute;
+            width: 300px; 
+            height: 173.21px;
+            background-color: #f1f1f1;
+            margin: 86.60px 0;
+            }
+
+            .hexagon:before,
+            .hexagon:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 150px solid transparent;
+            border-right: 150px solid transparent;
+            }
+
+            .hexagon:before {
+            bottom: 100%;
+            border-bottom: 86.60px solid #f1f1f1;
+            }
+
+            .hexagon:after {
+            top: 100%;
+            width: 0;
+            border-top: 86.60px solid #f1f1f1;
+            }
+
+            .hexagon{
+                top:500px;
+                left:550px;
+            }
+
+            .hexagon2{
+                top:180px;
+                left:275px;
+                z-index: 2;
+            }
+
+            
+            .hexagon3{
+                top:-150px;
+                left:500px;
+            }
+            
+            #texts1{
+                position: absolute;
+                top:60px;
+                left:80px;
+                color: #169491;                
+            }
+
+            #texts1 h1{
+                font-size: 70px;
+            }
+
+            #texts1 h3, #texts2 h3{
+                letter-spacing: 7px;
+            }
+
+            #texts2{
+                position: absolute;
+                width:250px;
+                left: 80px;
+                top: 600px;
+                color: #169491; 
+            }
+            
+            #texts2 p{
+                font-size: 12px;
+            }
+
+            #texts2 h4{
+                margin-top: 60px;
+            }
+    </style>
 </head>
 <body>
-    
+    <div id="container">
+        <div id="texts1">
+            <h1>HEADLINE</h1>
+            <h3>SPACE HERE</h3>
+            <p>Lorem Ipsum. Pellentesque id neque</p>
+        </div>
+        <div id="texts2">
+            <h3>TITLE TEXT</h3>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae orci sed nibh tincidunt sollicitudin. Suspendisse ut gravida tellus. Nam elit est, iaculis id sem ut, sodales pretium magna. Integer ullamcorper at libero porttitor dignissim. Nulla condimentum ultricies laoreet. Duis tellus lacus, finibus eget malesuada sagittis, faucibus non risus. Proin malesuada blandit leo, ut efficitur lectus. Nullam egestas ligula eu aliquet lacinia. 
+            </p>
+            <br>
+            <p>Nam id augue eu augue vehicula dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam mollis feugiat nisi. Ut tristique lobortis eros ut maximus. Proin sollicitudin a libero eu sollicitudin. Ut ac pulvinar metus. Duis non vestibulum diam.</p>
+            <h4>www.companyname.com</h4>
+        </div>
+        <div class="hexagon"></div>
+        <div class="hexagon2"></div>
+        <div class="hexagon3"></div>
+    </div>
 </body>
 </html>
